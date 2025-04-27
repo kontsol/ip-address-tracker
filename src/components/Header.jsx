@@ -8,8 +8,8 @@ const Header = ({ onSearch }) => {
 
   const handleClick = () => {
     if (inputValue.trim() !== "") {
-      onSearch(inputValue); // Call the onSearch function passed from App.jsx
-      setInputValue(""); // Clear the input field after search
+      onSearch(inputValue);
+      setInputValue("");
     }
   };
 
