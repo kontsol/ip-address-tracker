@@ -14,7 +14,7 @@ const Header = ({ onSearch }) => {
   };
 
   return (
-    <header className="relative w-full h-80">
+    <header className="relative w-full h-50">
       HEADER
       <img
         src={bgDesktop}
@@ -26,15 +26,15 @@ const Header = ({ onSearch }) => {
         alt="Desktop Background"
         className="block md:hidden absolute top-0 w-full h-full object-cover"
       />
-      <div className="flex flex-col gap-2 justify-center items-center mt-10 absolute w-full">
-        <h1 className="text-white font-semibold text-3xl">
+      <div className="px-4 sm:px-8 md:px-0 flex flex-col gap-2 justify-center items-center absolute w-full ">
+        <h1 className="text-white font-semibold text-md md:text-lg">
           IP Address Tracker
         </h1>
         <div className="flex">
           <input
             type="text"
-            placeholder="192.212.212.212"
-            className="pl-5 bg-white outline-none text-black text-xl rounded-l-lg w-120"
+            placeholder="Search for any IP address or domain"
+            className="pl-5 bg-white outline-none text-black text-xs  rounded-l-lg w-40 sm:w-60 lg:w-100"
             onChange={(e) => setInputValue(e.target.value)}
             value={inputValue}
           />
@@ -42,7 +42,7 @@ const Header = ({ onSearch }) => {
             onClick={handleClick}
             src={arrow}
             alt="search-bar-arrow"
-            className="bg-gray-800 hover:bg-gray-700 px-5 py-5 rounded-r-lg cursor-pointer transition-colors duration-300"
+            className="bg-gray-800 hover:bg-gray-700 px-5 py-4 rounded-r-lg cursor-pointer transition-colors duration-300"
           />
         </div>
       </div>

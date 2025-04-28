@@ -31,7 +31,7 @@ const Map = ({ ipData }) => {
     return null;
   };
   return (
-    <section className="map-component">
+    <section className="map-component relative z-10">
       <div id="map">
         <MapContainer
           center={position}

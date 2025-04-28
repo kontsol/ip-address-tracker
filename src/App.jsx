@@ -42,9 +42,9 @@ function App() {
       <Container>
         {error && <p className="text-red-500 text-center">{error}</p>}
         {loading && <p className="text-center">Loading...</p>}
-        {ipData && <InfoCard ipData={ipData} />}
-        {ipData && <Map ipData={ipData} />}
+        {!error && <InfoCard ipData={ipData} />}
       </Container>
+      {!error && ipData && <Map ipData={ipData} />}
     </section>
   );
 }

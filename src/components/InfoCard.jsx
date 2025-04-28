@@ -2,14 +2,14 @@ import React from "react";
 
 const InfoCard = ({ ipData }) => {
   return ipData ? (
-    <div className="bg-white p-6 rounded-lg shadow-md -mt-10 relative z-10 flex flex-col md:flex-row md:divide-x divide-gray-300">
-      <div className="text-center md:w-1/4 py-6 md:py-0">
+    <div className="bg-white p-6 rounded-lg shadow-md absolute z-100 -top-20 flex flex-col md:flex-row">
+      <div className="md:w-1/4 py-6 md:py-0">
         <p className="text-xs text-gray-600 uppercase tracking-wide">
           IP Address
         </p>
         <p className="text-base font-bold mt-1">{ipData.ip}</p>
       </div>
-      <div className="text-center md:w-1/4 py-6 md:py-0">
+      <div className="md:w-1/4 py-6 md:py-0">
         <p className="text-xs text-gray-600 uppercase tracking-wide">
           Location
         </p>
@@ -18,7 +18,7 @@ const InfoCard = ({ ipData }) => {
           {ipData.location.postalCode}
         </p>
       </div>
-      <div className="text-center md:w-1/4 py-6 md:py-0">
+      <div className="md:w-1/4 py-6 md:py-0">
         <p className="text-xs text-gray-600 uppercase tracking-wide">
           Timezone
         </p>
@@ -26,7 +26,7 @@ const InfoCard = ({ ipData }) => {
           UTC {ipData.location.timezone}
         </p>
       </div>
-      <div className="text-center md:w-1/4 py-6 md:py-0">
+      <div className="md:w-1/4 py-6 md:py-0">
         <p className="text-xs text-gray-600 uppercase tracking-wide">ISP</p>
         <p className="text-base font-bold mt-1">{ipData.isp}</p>
       </div>
