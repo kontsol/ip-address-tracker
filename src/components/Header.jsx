@@ -14,7 +14,7 @@ const Header = ({ onSearch }) => {
   };
 
   return (
-    <header className="relative w-full h-50">
+    <header className="relative w-full h-40 ">
       HEADER
       <img
         src={bgDesktop}
@@ -26,15 +26,15 @@ const Header = ({ onSearch }) => {
         alt="Desktop Background"
         className="block md:hidden absolute top-0 w-full h-full object-cover"
       />
-      <div className="px-4 sm:px-8 md:px-0 flex flex-col gap-2 justify-center items-center absolute w-full ">
-        <h1 className="text-white font-semibold text-md md:text-lg">
+      <div className="absolute w-full px-2 sm:px-4">
+        <h1 className="text-white text-center font-semibold text-md md:text-lg">
           IP Address Tracker
         </h1>
-        <div className="flex">
+        <div className="flex justify-center">
           <input
             type="text"
             placeholder="Search for any IP address or domain"
-            className="pl-5 bg-white outline-none text-black text-xs  rounded-l-lg w-40 sm:w-60 lg:w-100"
+            className="pl-1 md:pl-5 bg-white outline-none text-black text-xs max-w-[700px] w-full rounded-l-lg"
             onChange={(e) => setInputValue(e.target.value)}
             value={inputValue}
           />

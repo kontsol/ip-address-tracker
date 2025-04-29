@@ -41,9 +41,7 @@ function App() {
       <Header onSearch={handleSearch} />
       <Container>
         {error && (
-          <p className="text-red-500 text-center border-2 border-yellow-400 w-full mx-auto">
-            {error}
-          </p>
+          <p className="text-red-500 text-center w-full mx-auto">{error}</p>
         )}
         {loading && <p className="text-center">Loading...</p>}
         {!error && <InfoCard ipData={ipData} />}

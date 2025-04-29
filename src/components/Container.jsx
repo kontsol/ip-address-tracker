@@ -1,9 +1,10 @@
 import React from "react";
 
 const Container = ({ children }) => {
+  // max-w-6xl px-4
   return (
-    <div className="max-w-6xl px-4 relative flex justify-center ">
-      {children}
+    <div className="w-full px-2 sm:px-4">
+      <div className="relative">{children}</div>
     </div>
   );
 };

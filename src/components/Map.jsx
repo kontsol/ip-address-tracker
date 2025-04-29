@@ -37,7 +37,7 @@ const Map = ({ ipData }) => {
           center={position}
           zoom={15}
           scrollWheelZoom={true}
-          style={{ height: "100vh", width: "100%" }}
+          style={{ width: "100%" }}
         >
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
